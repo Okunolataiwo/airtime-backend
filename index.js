@@ -15,11 +15,14 @@ app.get("/test", (req, res) => {
   res.json({ message: "API working fine" });
 });
 app.post("/fund-wallet", (req, res) => {
-  console.log("Request received");
   const { amount } = req.body;
-  console.log(amount);
-  wallet += amount;
-  res.json({ message: "Wallet funded", balance: wallet });
+
+  console.log("Received:", amount);
+
+  res.json({
+    message: "Wallet funded successfully",
+    balance: +=amount
+  });
 });
 
 app.post("/buy-airtime", (req, res) => {
