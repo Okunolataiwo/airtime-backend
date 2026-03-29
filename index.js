@@ -21,7 +21,7 @@ app.post("/fund-wallet", (req, res) => {
 
   res.json({
     message: "Wallet funded successfully",
-    balance: +=amount
+    balance: +=amount;
   });
 });
 
