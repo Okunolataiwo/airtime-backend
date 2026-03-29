@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
   res.send("API is working");
 });
 
+app.get("/test", (req, res) => {
+  res.json({ message: "API working fine" });
+});
 app.post("/fund-wallet", (req, res) => {
   const { amount } = req.body;
   wallet += amount;
